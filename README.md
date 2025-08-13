@@ -98,8 +98,8 @@ gainLoss <paramFileName>
 
 The required argument is a **parameter file**, which specifies:
 
-* A 0/1 phyletic pattern file (FASTA format)
-* Optionally: A tree file (Newick format)
+* A 0/1 phyletic pattern file (FASTA format, .fasta extension is required)
+* Optionally: A tree file (Newick format, .newick extension is required)
 * Other optional configuration parameters (in case if not provided default parameters will be used)
 
 ---
@@ -140,8 +140,8 @@ _numberOfLossCategories     3
 
 ## Input File Formats
 
-* ***seqFile*** (required): Binary sequence file in **FASTA** format using 0/1 encoding
-* ***treeFile*** (optional but recommended): Tree in **Newick** format
+* ***seqFile*** (required): Binary sequence file in **FASTA** format using 0/1 encoding, .fasta extension is required
+* ***treeFile*** (optional but recommended): Tree in **Newick** format, .newick extension is required
 
 If `_treeFile` is not provided, only default or basic analyses will be run.
 
