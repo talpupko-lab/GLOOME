@@ -111,11 +111,11 @@ Below is an example of the contents of a `paramFileName` used to configure a run
 ```ini
 ######## gainLoss Parameters file ########
 
-### Required (FASTA)
-_seqFile   /<Path>/msaFile.aln
+### Required (FASTA format, .fasta extension is required)
+_seqFile   /<Path>/msaFile.fasta
 
-### Recommended (Newick format)
-_treeFile  /<Path>/usrTreeFile
+### Recommended (Newick format, .newick extension is required)
+_treeFile  /<Path>/usrTreeFile.newick
 
 ### Evolutionary Model Options
 _rateDistributionType       GAMMA
