@@ -19,7 +19,7 @@ The primary purpose of the GLOOME server is to accurately infer **branch-specifi
 - Likelihood and parsimony-based output
 
 A **full user manual** is included in the release:  
-📘 **`GLOOME.CoPAP.gainLoss.Manual.pdf`**
+**`GLOOME.CoPAP.gainLoss.Manual.pdf`**
 
 This manual provides comprehensive guidance on installation, input formats, command-line usage, interpretation of results, and troubleshooting.
 
@@ -37,12 +37,13 @@ This manual provides comprehensive guidance on installation, input formats, comm
 1. Download the latest release: `gainLoss.tar.zip`
 
 2. Unzip and untar the archive:
+   
    ```bash
    unzip gainLoss.tar.zip
-   tar -xvf gainLoss.tar
-````
+   tar -xvf gainLoss.tar```
 
 This will create the following directory structure:
+
 
 ```
 libs/phylogeny
@@ -65,7 +66,8 @@ programs/gainLoss
    make
    ```
 
-   This will generate an executable called `gainLoss` in the `programs/gainLoss/` directory.
+
+This will generate an executable called `gainLoss` in the `programs/gainLoss/` directory.
 
 ### Build Option 2: Manual Compilation (If Makefiles Fail)
 
@@ -91,14 +93,14 @@ programs/gainLoss
 Run the program using:
 
 ```bash
-gainLoss paramFileName
+gainLoss <paramFileName>
 ```
 
 The required argument is a **parameter file**, which specifies:
 
 * A 0/1 phyletic pattern file (FASTA format)
 * Optionally: A tree file (Newick format)
-* Other optional configuration parameters
+* Other optional configuration parameters (in case if not provided default parameters will be used)
 
 ---
 
@@ -110,10 +112,10 @@ Below is an example of the contents of a `paramFileName` used to configure a run
 ######## gainLoss Parameters file ########
 
 ### Required (FASTA)
-_seqFile   /path/msaFile.aln
+_seqFile   /<Path>/msaFile.aln
 
 ### Recommended (Newick format)
-_treeFile  /path/usrTreeFile
+_treeFile  /<Path>/usrTreeFile
 
 ### Evolutionary Model Options
 _rateDistributionType       GAMMA
@@ -156,5 +158,3 @@ If `_treeFile` is not provided, only default or basic analyses will be run.
 ## Contact
 
 For issues, questions, or contributions, please open an issue on the repository or contact the maintainer.
-
----
