@@ -67,6 +67,24 @@ programs/gainLoss
    ```
 
 
+If the build fails with errors it’s likely that the wrong C++ compiler is being used (e.g., Apple's Clang instead of GCC).
+To check which compiler is currently used by default, run:
+
+
+```bash
+which g++
+```
+
+If it doesn’t point to your desired GCC installation (e.g., from Homebrew), you can override it when running make by explicitly setting the CXX variable, e.g.:
+
+
+```bash
+make CXX=/opt/homebrew/bin/g++-15
+```
+
+This will ensure that the Makefile uses the specified compiler for building the project
+
+
 This will generate an executable called `gainLoss` in the `programs/gainLoss/` directory.
 
 ### Build Option 2: Manual Compilation (If Makefiles Fail)
