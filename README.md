@@ -173,6 +173,31 @@ If `_treeFile` is not provided, only default or basic analyses will be run.
 
 ---
 
+
+## Citing
+
+If you use the GLOOME web server for your research, please make sure to cite the following publication:
+
+Cohen, O., Ashkenazy, H., Belinky, F., Huchon, D., and Pupko, T. (2010).
+GLOOME: gain loss mapping engine. Bioinformatics, 26(22), 2914–2915.
+https://doi.org/10.1093/bioinformatics/btq549
+
+<details> <summary>BibTeX</summary>
+@article{Cohen2010GLOOME,
+  title={GLOOME: gain loss mapping engine},
+  author={Cohen, O. and Ashkenazy, H. and Belinky, F. and Huchon, D. and Pupko, T.},
+  journal={Bioinformatics},
+  volume={26},
+  number={22},
+  pages={2914--2915},
+  year={2010},
+  publisher={Oxford University Press},
+  doi={10.1093/bioinformatics/btq549}
+}
+</details>
+
+Proper citation helps support the development and maintenance of this tool.
+
 ## Contact
 
-For issues, questions, or contributions, please open an issue on the repository or contact the maintainer.
+For questions, issues, or contributions, please open an issue on the repository or contact the maintainer directly.
